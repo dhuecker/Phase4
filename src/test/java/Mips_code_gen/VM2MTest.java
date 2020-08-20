@@ -46,7 +46,7 @@ public class VM2MTest {
             fail();
         }
 
-        VM2M.instructionSelection();
+        VM2M.inSelection();
         assertEquals("", outputContent.toString());
     }
 
@@ -60,7 +60,7 @@ public class VM2MTest {
             fail();
         }
 
-        VM2M.instructionSelection();
+        VM2M.inSelection();
         assertEquals("", outputContent.toString());
     }
 
@@ -74,7 +74,7 @@ public class VM2MTest {
             fail();
         }
 
-        VM2M.instructionSelection();
+        VM2M.inSelection();
         assertEquals("", outputContent.toString());
     }
 
@@ -88,7 +88,7 @@ public class VM2MTest {
             fail();
         }
 
-        VM2M.instructionSelection();
+        VM2M.inSelection();
         assertEquals("", outputContent.toString());
     }
 
@@ -102,7 +102,7 @@ public class VM2MTest {
             fail();
         }
 
-        VM2M.instructionSelection();
+        VM2M.inSelection();
         assertEquals("", outputContent.toString());
     }
 
@@ -116,7 +116,7 @@ public class VM2MTest {
             fail();
         }
 
-        VM2M.instructionSelection();
+        VM2M.inSelection();
         assertEquals("", outputContent.toString());
     }
 
@@ -130,7 +130,7 @@ public class VM2MTest {
             fail();
         }
 
-        VM2M.instructionSelection();
+        VM2M.inSelection();
         assertEquals("", outputContent.toString());
     }
 

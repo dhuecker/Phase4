@@ -5,10 +5,10 @@ import cs132.vapor.ast.VaporProgram;
 
 public class VM2M {
     public static void main(String[] args) {
-        instructionSelection();
+        inSelection();
     }
 
-    public static void instructionSelection() {
+    public static void inSelection() {
         try {
             VaporProgram vtree = ParseVapMInput.parseVapor(System.in, System.err);
 

@@ -38,9 +38,9 @@ public class MipsVisitor<E extends Throwable> extends Visitor<E> {
         }
     }
 
-    /*
-        Helper functions
-    */
+
+    // Helper functions
+
 
     int getRelativeLoc(int sourceLoc) {
         return (sourceLoc - currentFunc.sourcePos.line) - 1;
