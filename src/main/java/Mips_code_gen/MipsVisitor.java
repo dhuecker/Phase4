@@ -6,7 +6,7 @@ import cs132.vapor.ast.VInstr.Visitor;
 import java.util.List;
 import java.util.ArrayList;
 
-public class VapVisitor<E extends Throwable> extends Visitor<E> {
+public class MipsVisitor<E extends Throwable> extends Visitor<E> {
 
     VFunction currentFunc;
     List<String> vapBuffer;
