@@ -257,4 +257,4 @@ public class MipsVisitor<E extends Throwable> extends Visitor<E> {
 
         addLine(relativeLoc, currentLine);
     }
-}
+} //end MipsVisitor class

@@ -61,4 +61,4 @@ public class VM2M {
             e.printStackTrace(System.out);
         }
     }
-}
+} //end VM2M class
