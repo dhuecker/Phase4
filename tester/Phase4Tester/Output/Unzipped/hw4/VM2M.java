@@ -30,7 +30,7 @@ public class VM2M {
             System.out.println("jal Main\nli $v0 10\nsyscall\n");
 
             // Translate function bodies
-            VapVisitor<Exception> vVisitor = new VapVisitor<>();
+            MipsVisitor<Exception> vVisitor = new MipsVisitor<>();
             for (int a = 0; a < vtree.functions.length; a++) {
                 VFunction currentF = vtree.functions[a];
                 vVisitor.setData(currentF);
