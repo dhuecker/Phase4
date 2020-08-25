@@ -56,9 +56,7 @@ public class MipsVisitor<E extends Throwable> extends Visitor<E> {
         vapBuffer.set(loc,line);
     }
 
-    /*
-        Visitor functions
-    */
+    //visit methods below for translation to Mips
 
     public void visit(VAssign x) throws E {
         String currentLine = "";
@@ -259,4 +257,4 @@ public class MipsVisitor<E extends Throwable> extends Visitor<E> {
 
         addLine(relativeLoc, currentLine);
     }
-}
+} //end MipsVisitor class

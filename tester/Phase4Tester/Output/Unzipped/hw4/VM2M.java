@@ -12,7 +12,7 @@ public class VM2M {
         try {
             VaporProgram vtree = ParseVapMInput.parseVapor(System.in, System.err);
 
-            // Translate the data section
+            // Translate data 
             System.out.println(".data");
             for (int a = 0; a < vtree.dataSegments.length; a++) {
                 System.out.println(vtree.dataSegments[a].ident + ":");
@@ -23,22 +23,21 @@ public class VM2M {
             }
             System.out.println("");
 
-            // Translate the text section
+            // Translate text
             System.out.println(".text");
 
             // Jump-and-link to Main
             System.out.println("jal Main\nli $v0 10\nsyscall\n");
 
-            // Translate function bodies
+            // Translate function below
             MipsVisitor<Exception> vVisitor = new MipsVisitor<>();
             for (int a = 0; a < vtree.functions.length; a++) {
                 VFunction currentF = vtree.functions[a];
                 vVisitor.setData(currentF);
 
-                // Translate function header
+
                 System.out.println(currentF.ident + ":");
 
-                // For each line in each function in the program
                 for (int b = 0; b < currentF.body.length; b++) {
                     currentF.body[b].accept(vVisitor);
                 }
@@ -61,4 +60,4 @@ public class VM2M {
             e.printStackTrace(System.out);
         }
     }
-}
+} //end VM2M class
