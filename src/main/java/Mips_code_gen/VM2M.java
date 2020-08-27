@@ -44,10 +44,10 @@ public class VM2M {
 
                 vVisitor.printVapBuffer();
 
-                System.out.println(); // newline for readability
+                System.out.println();
             }
 
-            // Translate useful syscalls and data
+            // Translate syscalls & data
             System.out.println("\n_print:\nli $v0 1\nsyscall\nla $a0 _newline\nli $v0 4\nsyscall\njr $ra");
             System.out.println("\n_error:\nli $v0 4\nsyscall\nli $v0 10\nsyscall");
             System.out.println("\n_heapAlloc:\nli $v0 9\nsyscall\njr $ra");

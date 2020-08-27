@@ -92,6 +92,7 @@ public class MipsVisitor<E extends Throwable> extends Visitor<E> {
         String currentLine = "";
         int relativeLoc = getRelativeLoc(x.sourcePos.line);
 
+            //switch statement to handle cases below
         switch (x.op.name) {
             case "Add":
                 if (x.args[0] instanceof VOperand.Static && !(x.args[1] instanceof VOperand.Static)) {
